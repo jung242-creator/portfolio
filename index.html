@@ -3,57 +3,65 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>김민정 포트폴리오 · e-교재 플랫폼 구축과 운영 정책 설계</title>
-<style>
-  html, body { margin: 0; padding: 0; background: #e9e9e7; }
-  main { max-width: 1920px; margin: 0 auto; background: #fff; box-shadow: 0 0 40px rgba(0,0,0,.08); }
-  img { display: block; width: 100%; height: auto; }
-  .appx { padding: clamp(40px, 7vw, 140px) clamp(20px, 5.2vw, 100px); background: #f6f6f4; font-family: "Noto Sans KR", system-ui, sans-serif; color: #1a1a1a; }
-  .eyebrow { margin: 0 0 12px; color: #f26b1d; font-weight: 700; font-size: clamp(13px, 1vw, 20px); }
-  .appx h2 { margin: 0 0 20px; font-size: clamp(24px, 2.5vw, 48px); line-height: 1.3; font-weight: 800; letter-spacing: -0.02em; }
-  .lead { margin: 0 0 28px; max-width: 900px; font-size: clamp(14px, 1.05vw, 20px); line-height: 1.7; color: #555; }
-  .chips { list-style: none; padding: 0; margin: 0 0 clamp(32px, 4vw, 72px); display: flex; flex-wrap: wrap; gap: 8px; }
-  .chips li { padding: 6px 14px; border: 1px solid #f2b48f; border-radius: 999px; color: #c4521a; background: #fff; font-size: clamp(12px, .85vw, 16px); }
-  figure { margin: 0 0 clamp(32px, 4vw, 72px); }
-  figure img { border: 1px solid #e2e2df; border-radius: 12px; background: #fff; box-shadow: 0 8px 30px rgba(0,0,0,.06); }
-  figcaption { margin-top: 14px; font-size: clamp(13px, .95vw, 18px); line-height: 1.6; color: #555; }
-  figcaption b { color: #1a1a1a; margin-right: 8px; }
-</style>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;800&display=swap">
+<title>김민정 · 서비스 기획 포트폴리오</title>
+<meta name="description" content="김민정 서비스 기획 포트폴리오">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<main>
-  <img src="img/p00.webp" width="1920" height="1600" alt="메가공무원 × FLEXCIL e-교재 플랫폼 구축과 운영 정책 설계 포트폴리오 (1/11)">
-  <img src="img/p01.webp" width="1920" height="1600" alt="e-교재 플랫폼 포트폴리오 (2/11)" loading="lazy">
-  <img src="img/p02.webp" width="1920" height="1600" alt="e-교재 플랫폼 포트폴리오 (3/11)" loading="lazy">
-  <img src="img/p03.webp" width="1920" height="1600" alt="e-교재 플랫폼 포트폴리오 (4/11)" loading="lazy">
-  <img src="img/p04.webp" width="1920" height="1600" alt="e-교재 플랫폼 포트폴리오 (5/11)" loading="lazy">
-  <img src="img/p05.webp" width="1920" height="1600" alt="e-교재 플랫폼 포트폴리오 (6/11)" loading="lazy">
-  <img src="img/p06.webp" width="1920" height="1600" alt="e-교재 플랫폼 포트폴리오 (7/11)" loading="lazy">
-  <img src="img/p07.webp" width="1920" height="1600" alt="e-교재 플랫폼 포트폴리오 (8/11)" loading="lazy">
-  <img src="img/p08.webp" width="1920" height="1600" alt="e-교재 플랫폼 포트폴리오 (9/11)" loading="lazy">
-  <img src="img/p09.webp" width="1920" height="1600" alt="e-교재 플랫폼 포트폴리오 (10/11)" loading="lazy">
-  <img src="img/p10.webp" width="1920" height="1444" alt="e-교재 플랫폼 포트폴리오 (11/11)" loading="lazy">
-  <section class="appx">
-    <p class="eyebrow">Appendix.</p>
-    <h2>실제 화면설계서 발췌</h2>
-    <p class="lead">온라인서점 e-교재 기능을 취합해 직접 작성한 83페이지 기획·화면설계서(v1.0, 2023.02) 중 일부입니다. 수험생 화면부터 상담 도구와 관리자 화면까지, 서비스가 닿는 모든 접점을 한 문서로 정의했습니다.</p>
-    <ul class="chips" aria-label="문서 구성">
-      <li>사이트맵 · 사용자/관리자</li><li>운영 정책</li><li>PC 프론트 · 마이페이지/수강신청/결제</li><li>결제 취소 · CTI 상담툴</li><li>스콘 앱</li><li>기기 등록/해지</li><li>관리자 · 교재 마스터/매출 정산</li><li>온라인서점</li>
-    </ul>
-    <figure>
-      <img src="img/spec15.webp" width="2693" height="1425" alt="화면설계서: PC 마이페이지 나의 e-교재 화면과 번호별 기능 설명" loading="lazy">
-      <figcaption><b>수험생 화면</b> 마이페이지 &gt; 나의 e-교재. PC·모바일·앱 설치 여부에 따라 'e-교재 보기'가 어떻게 동작하는지까지 정의</figcaption>
-    </figure>
-    <figure>
-      <img src="img/spec64.webp" width="2693" height="1425" alt="화면설계서: 관리자 e-교재 마스터 목록 화면과 번호별 기능 설명" loading="lazy">
-      <figcaption><b>관리자 화면</b> e-교재 마스터. 영역·과목·판매 상태 조건 검색, 엑셀 추출, 등록·수정 흐름 정의</figcaption>
-    </figure>
-    <figure>
-      <img src="img/spec50.webp" width="2693" height="847" alt="기기등록/해지 운영정책 AS IS, TO BE 비교" loading="lazy">
-      <figcaption><b>운영 정책 개선</b> 학습지원팀 문의로만 가능하던 기기 해지를, 앱에서 사용자가 직접 처리하도록 변경</figcaption>
-    </figure>
-  </section>
+<main class="wrap">
+  <header class="intro">
+    <p class="eyebrow">Service Planner Portfolio</p>
+    <h1>정책부터 화면까지,<br>운영되는 서비스를 설계합니다.</h1>
+    <p>김민정 · 디자이너로 시작해 서비스 정책과 운영 기획까지 맡아온 11년. 구조를 파악하고, 개선하고, 문제없이 출시하는 일을 합니다.</p>
+  </header>
+  <ul class="gallery">
+    <li>
+      <a class="card" href="work/ebook.html">
+        <div class="thumb"><img src="img/thumb/ebook.webp" width="960" height="540" alt="" loading="lazy"></div>
+        <div class="body">
+          <div class="meta"><span class="num">Case 01</span><span>메가공무원 × FLEXCIL</span><span class="badge live">출시 · 운영</span></div>
+          <h2>e-교재 플랫폼 구축과 운영 정책 설계</h2>
+          <p>실패 사례만 남아 있던 공무원 수험 시장에서, 서비스 정책부터 UX 구조까지 총괄해 론칭하고 운영한 e-교재 플랫폼 구축기</p>
+          <ul class="chips"><li>운영 정책</li><li>서비스 구축</li><li>화면 설계</li></ul>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="card" href="work/scon.html">
+        <div class="thumb"><img src="img/thumb/scon.webp" width="960" height="540" alt="" loading="lazy"></div>
+        <div class="body">
+          <div class="meta"><span class="num">Case 02</span><span>메가공무원 × M공단기 × FLEXCIL</span><span class="badge">설계 완료 · 미출시</span></div>
+          <h2>두 서비스를 하나로, 통합 스콘앱 설계</h2>
+          <p>서로 다른 법인이 운영하던 두 e-교재 서비스를, 사용자의 교재·이용권·필기 데이터를 잃지 않고 하나로 합치는 설계</p>
+          <ul class="chips"><li>회원 정책</li><li>데이터 이관</li><li>런칭 시나리오</li></ul>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="card" href="work/modu.html">
+        <div class="thumb"><img src="img/thumb/modu.webp" width="960" height="540" alt="" loading="lazy"></div>
+        <div class="body">
+          <div class="meta"><span class="num">Case 03</span><span>모두소 · 모두공</span><span class="badge live">오픈 완료</span></div>
+          <h2>모두시리즈 서비스 개선</h2>
+          <p>배너가 쌓여 길어진 메인을 수험생이 먼저 찾는 정보 순서로 다시 구성하고, 오래된 수강 플레이어를 학생 의견과 외부 제약에 맞춰 다시 설계한 개선 작업</p>
+          <ul class="chips"><li>정보 구조</li><li>개선 기획</li><li>UI 개선</li></ul>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="card" href="work/stepin.html">
+        <div class="thumb"><img src="img/thumb/stepin.webp" width="960" height="540" alt="" loading="lazy"></div>
+        <div class="body">
+          <div class="meta"><span class="num">Case 04</span><span>이화여대 디자인대학원 · 팀 프로젝트</span><span class="badge">대학원 프로젝트</span></div>
+          <h2>STEP-IN, AI 자율주행 택시 탑승 튜토리얼</h2>
+          <p>한국 사용자를 위한 AI 자율주행 택시 탑승 경험을 돕는 튜토리얼 서비스 연구</p>
+          <ul class="chips"><li>UX 리서치</li><li>서비스 설계</li></ul>
+        </div>
+      </a>
+    </li>
+  </ul>
 </main>
+<footer class="site-foot"><div class="wrap">© 김민정</div></footer>
 </body>
 </html>
